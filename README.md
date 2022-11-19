@@ -15,7 +15,7 @@
 ./hello-world -Dredisson.single-server-config.address='redis://127.0.0.1:6379'
 
 
-curl -X POST -H 'Content-Type: application/json' -d '{"firstName":"Fred","lastName":"Flintstone","age":45}' http://localhost:8080/helloController/save 
--H 'Content-Type: text/plain'
+curl -X POST -H 'Content-Type: application/json' -d '{"name":"Fred","age":45}' http://localhost:8080/helloController/save 
+
 
 curl -X POST -H 'Content-Type: text/plain' -d 'tesst' http://localhost:8080/helloController/echo 
