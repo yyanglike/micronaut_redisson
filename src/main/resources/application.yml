@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: helloWorld
+  codec:
+    json:
+      additionalTypes:
+        - text/javascript
+netty:
+  default:
+    allocator:
+      max-order: 3
+
+redisson:
+  single-server-config:
+     address: "redis://127.0.0.1:6379"
+  threads: 16
+  netty-threads: 32
