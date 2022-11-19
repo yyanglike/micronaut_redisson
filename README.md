@@ -13,3 +13,6 @@
 
 
 ./hello-world -Dredisson.single-server-config.address='redis://127.0.0.1:6379'
+
+
+curl -X POST localhost:8080/helloController/save -d '{"firstName":"Fred","lastName":"Flintstone","age":45}'
