@@ -15,11 +15,9 @@ import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.*;
 import io.micronaut.validation.Validated;
 import jakarta.inject.Inject;
-import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Controller("/helloController")
-@Validated
 public class HelloControllerController {
 
     @Inject
@@ -44,10 +42,10 @@ public class HelloControllerController {
     }
 
 
-    // @Post(value = "/echo", consumes = MediaType.APPLICATION_JSON, produces = MediaType.TEXT_PLAIN) // 
-    // public String echo(@Size(max = 1024) @Body String text) { // 
-    //     return text; // 
-    // }
+    @Post(value = "/echo", consumes = MediaType.APPLICATION_JSON, produces = MediaType.TEXT_PLAIN) // 
+    public String echo(@Size(max = 1024) @Body String text) { // 
+        return text; // 
+    }
 
     @Post(value = "/saveReactive", consumes = MediaType.APPLICATION_JSON)
     @SingleResult

@@ -1,0 +1,21 @@
+{
+  "resources" : {
+    "includes" : [ {
+      "pattern" : "\\QMETA-INF/micronaut/io.micronaut.core.graal.GraalReflectionConfigurer/hello.world.$DataService$ReflectConfig\\E"
+    }, {
+      "pattern" : "\\QMETA-INF/micronaut/io.micronaut.inject.BeanDefinitionReference/hello.world.$HelloControllerController$Definition$Reference\\E"
+    }, {
+      "pattern" : "\\QMETA-INF/micronaut/io.micronaut.inject.BeanDefinitionReference/hello.world.$DataService$Definition$Reference\\E"
+    }, {
+      "pattern" : "\\QMETA-INF/micronaut/io.micronaut.inject.BeanDefinitionReference/hello.world.$HelloControllerController$Definition$Intercepted$Definition$Reference\\E"
+    }, {
+      "pattern" : "\\QMETA-INF/micronaut/io.micronaut.core.beans.BeanIntrospectionReference/hello.world.$Person$IntrospectionRef\\E"
+    }, {
+      "pattern" : "\\Qlogback.xml\\E"
+    }, {
+      "pattern" : "\\Qapplication.yml\\E"
+    } ],
+    "excludes" : [ ]
+  },
+  "bundles" : [ ]
+}
